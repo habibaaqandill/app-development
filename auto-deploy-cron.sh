@@ -3,14 +3,10 @@
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH
 
 cd /home/habiba/app-deployment
-
-# فحص التغييرات الجديدة على GitHub
 git fetch origin main >/dev/null 2>&1
 
 LOCAL_SHA=$(git rev-parse HEAD)
 REMOTE_SHA=$(git rev-parse origin/main)
-
-# إذا تم اكتشاف Push جديد
 if [ "$LOCAL_SHA" != "$REMOTE_SHA" ]; then
     echo "[$(date)] 🚀 New Git push detected! Deploying..." >> /home/habiba/app-deployment/cron-deploy.log
     git pull origin main >> /home/habiba/app-deployment/cron-deploy.log 2>&1
