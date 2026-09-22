@@ -6906,3 +6906,7 @@ Waiting for deployment "nginx-deployment" rollout to finish: 1 old replicas are 
 Waiting for deployment "nginx-deployment" rollout to finish: 1 old replicas are pending termination...
 deployment "nginx-deployment" successfully rolled out
 --> Rollout complete! Successfully deployed v39.0.
+[Tue Sep 22 04:28:02 PM EEST 2026] 🚀 New Git push detected! Deploying...
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+--> Target version auto-set to: v40.0
