@@ -3196,3 +3196,167 @@ hint: or --ff-only on the command line to override the configured default per
 hint: invocation.
 fatal: Need to specify how to reconcile divergent branches.
 --> Target version auto-set to: v23.0
+[main 63b36fa] UI update version v23.0
+ 1 file changed, 158 insertions(+)
+To https://github.com/habibaaqandill/app-development.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/habibaaqandill/app-development.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+--> Building Docker image: habibaaqandill/app-deployment-nginx:v23.0
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 212B done
+#1 DONE 0.0s
+
+#2 [auth] library/nginx:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/nginx:alpine
+#3 DONE 6.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 182B done
+#5 DONE 0.0s
+
+#6 [1/3] FROM docker.io/library/nginx:alpine@sha256:62ff2089abf5a9ed33bd232895bef5e22f7bb4b200675cec49a5ebc48e3d4ac8
+#6 resolve docker.io/library/nginx:alpine@sha256:62ff2089abf5a9ed33bd232895bef5e22f7bb4b200675cec49a5ebc48e3d4ac8 0.1s done
+#6 DONE 0.1s
+
+#7 [2/3] COPY default.conf /etc/nginx/conf.d/default.conf
+#7 CACHED
+
+#8 [3/3] COPY index.html /usr/share/nginx/html/index.html
+#8 CACHED
+
+#9 exporting to image
+#9 exporting layers 0.0s done
+#9 exporting manifest sha256:98e3f52ce7c3faf1a0c895a607e40050829fc429e2fe046d998c881d74137cc6 done
+#9 exporting config sha256:b7a4b557ae5a497dd666ec751224bf9366d880c46d7d564d248392008eb68e9e done
+#9 exporting attestation manifest sha256:6704dfe7895394f06af849667b2232e5a6dceb6cbb529823de89cfdb12e0bc00 0.0s done
+#9 exporting manifest list sha256:f7297eb1fd942a768792452b8869f5fb3855faf52afd1dc6eb71abb364c3da42 0.0s done
+#9 naming to docker.io/habibaaqandill/app-deployment-nginx:v23.0 done
+#9 unpacking to docker.io/habibaaqandill/app-deployment-nginx:v23.0 0.0s done
+#9 DONE 0.2s
+--> Pushing image to Docker Hub
+The push refers to repository [docker.io/habibaaqandill/app-deployment-nginx]
+0e7b6b542e77: Waiting
+44136fa355b3: Waiting
+fb08ee61b60d: Waiting
+e2de96513ba9: Waiting
+0e7b6b542e77: Waiting
+44136fa355b3: Waiting
+fb08ee61b60d: Waiting
+e2de96513ba9: Waiting
+44136fa355b3: Waiting
+fb08ee61b60d: Waiting
+e2de96513ba9: Waiting
+0e7b6b542e77: Waiting
+44136fa355b3: Waiting
+fb08ee61b60d: Waiting
+e2de96513ba9: Waiting
+0e7b6b542e77: Waiting
+44136fa355b3: Waiting
+fb08ee61b60d: Waiting
+e2de96513ba9: Waiting
+0e7b6b542e77: Waiting
+0e7b6b542e77: Waiting
+44136fa355b3: Waiting
+fb08ee61b60d: Waiting
+e2de96513ba9: Waiting
+fb08ee61b60d: Waiting
+e2de96513ba9: Waiting
+0e7b6b542e77: Waiting
+44136fa355b3: Waiting
+fb08ee61b60d: Waiting
+e2de96513ba9: Waiting
+0e7b6b542e77: Waiting
+44136fa355b3: Waiting
+44136fa355b3: Waiting
+fb08ee61b60d: Waiting
+e2de96513ba9: Waiting
+0e7b6b542e77: Waiting
+44136fa355b3: Waiting
+fb08ee61b60d: Waiting
+e2de96513ba9: Waiting
+0e7b6b542e77: Waiting
+873bdb7a78a1: Waiting
+0e7b6b542e77: Waiting
+44136fa355b3: Already exists
+fb08ee61b60d: Waiting
+e2de96513ba9: Waiting
+ce3e77cbba4d: Waiting
+873bdb7a78a1: Waiting
+0e7b6b542e77: Waiting
+fb08ee61b60d: Waiting
+e2de96513ba9: Waiting
+ce3e77cbba4d: Waiting
+e2de96513ba9: Layer already exists
+ce3e77cbba4d: Waiting
+873bdb7a78a1: Waiting
+cb2f2cc9a341: Waiting
+0e7b6b542e77: Waiting
+f408df9a891a: Waiting
+fb08ee61b60d: Layer already exists
+873bdb7a78a1: Waiting
+cb2f2cc9a341: Waiting
+0e7b6b542e77: Waiting
+f408df9a891a: Waiting
+ce3e77cbba4d: Waiting
+9e9456bd75f7: Waiting
+f408df9a891a: Layer already exists
+c0ac6b3b9c77: Waiting
+90de1d15efe2: Waiting
+873bdb7a78a1: Layer already exists
+cb2f2cc9a341: Layer already exists
+8fbe44acdf81: Waiting
+0e7b6b542e77: Waiting
+ce3e77cbba4d: Layer already exists
+0e7b6b542e77: Waiting
+9e9456bd75f7: Waiting
+c0ac6b3b9c77: Waiting
+90de1d15efe2: Waiting
+8fbe44acdf81: Waiting
+c0ac6b3b9c77: Layer already exists
+90de1d15efe2: Layer already exists
+8fbe44acdf81: Layer already exists
+0e7b6b542e77: Waiting
+9e9456bd75f7: Layer already exists
+0e7b6b542e77: Pushed
+v23.0: digest: sha256:f7297eb1fd942a768792452b8869f5fb3855faf52afd1dc6eb71abb364c3da42 size: 856
+--> Removing ConfigMap volume overrides
+deployment.apps/nginx-deployment patched (no change)
+--> Updating deployment image to habibaaqandill/app-deployment-nginx:v23.0
+deployment.apps/nginx-deployment image updated
+Waiting for deployment "nginx-deployment" rollout to finish: 1 out of 2 new replicas have been updated...
+Waiting for deployment "nginx-deployment" rollout to finish: 1 out of 2 new replicas have been updated...
+Waiting for deployment "nginx-deployment" rollout to finish: 1 out of 2 new replicas have been updated...
+Waiting for deployment "nginx-deployment" rollout to finish: 1 old replicas are pending termination...
+Waiting for deployment "nginx-deployment" rollout to finish: 1 old replicas are pending termination...
+Waiting for deployment "nginx-deployment" rollout to finish: 1 old replicas are pending termination...
+deployment "nginx-deployment" successfully rolled out
+--> Rollout complete! Successfully deployed v23.0.
+[Tue Sep 22 04:12:02 PM EEST 2026] 🚀 New Git push detected! Deploying...
+From https://github.com/habibaaqandill/app-development
+ * branch            main       -> FETCH_HEAD
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint:
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+--> Target version auto-set to: v24.0
